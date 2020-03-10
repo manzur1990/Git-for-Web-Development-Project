@@ -21,38 +21,98 @@ https://codepen.io/jorge-manzur/pen/jOPYoJa?editors=1100
     A: only once per web page. 
     10. What is a class? 
     A: its an attribute that will collectively target a group of elements for styling purposes.
-    11. What elements can I add a class to? 
-    12. How many times can I use the same class on a page? 
+    11. What elements can I add a class to?
+    A: multiple elements.  
+    12. How many times can I use the same class on a page?
+    A:  As many times needed. 
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute used for? 
+    A: add this to the anchor tag: a target="_blank". Example: <a href="https://www.thesitewizard.com/" target="_blank">thesitewizard.com</a>
+    14. What is the alt attribute used for?
+    A: alt attribute is an alternate text for an image in case the media cannot be displayed.   
     15. How do I reference an id?
+    A: in a css file it is referenced with a '#' symbol. the value is case sensetive so the reference should be displayed as such. 
     16. What is the difference between a section and a div
-    17. What is CSS used for? 
+    A: section represents the parts of the website such as 
+    17. What is CSS used for?
+    A: it's used for styling a website.  
     18. How to we select an element? Example - every h2 on the page
+    A: simply by writting the element such as h2, then open/close curly braces and in between you would specify the values. 
+    example: 
+    h2 {
+       color: blue;     
+    }
+    element selector on this example is h2 based on its element tag on HTML. It will reference this tag and apply the value, in this instance the font color blue!
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    A: a class is used for when you want to style multiple elements on a page, best anology I can think of is when you refer to a classroom, it's a group of individuals. An id will target a specific element and it will be unique. 
     20. How do we select classes in CSS?
+    A: you write a period at the beginning of the element just like:  '.content-flex'
     21. How do we select a p element with a single class of “human””?
+    A: by typing the following: 
+     p .human {
+
+    }
     22. What is a parent child selector? When would this be useful? 
+    A: is the selector the selects all elements that are a direct child of the specified element. Is useful in order to make sure that the cascading style will reference the intended element. 
     23. How do you select all links within a div with the class of sidebar?
+    A: by selecting the class attribute you want to style
+    .sidebar {
+
+    }
     24. What is a pseudo selector?
+    A:is a selector that adds a functionality to the element like the effect of hover over a button element to make it change its background color.
     25. What do we use the change the spacing between lines?
+    A: we use the 'line-height' property
     26. What do we use to change the spacing between letters?
+    A: we use 'letter-spacing'
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    A: text-transform: uppercase; lowercase; catipalize;
     28. How do I add a 1px border around my div that is dotted and black?
+    A: you select the dive element followed by the border property and you can simplify the value by adding it in a single line:
+
+        .this-div {
+            border: dotted 1px black
+        }
     29. How do I select everything on the page? 
+    A: by using the * selector: 
+
+    * {
+
+    }
     30. How do I write a comment in CSS?
+    A: you start a comment with /* and you end it with */
     31. How do I find out what file I am in, when I am using the command line? 
+    A: by typing 'pwd' to display path of current workig directory
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    A: by typing 'ls' it will list directory content
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    A: by typing 'rm'. this wont give you a warning and it does not have an undo option. 
     34. Why should I use version control? 
+    A: version control allows you to keep track of changes made on a file. It's the best way to revert to a previous version if needed, or to allow contributors to work on a project. 
     35. How often should I commit to github?
+    A: every 20 minutes or so. 
     36. What is the command we would use to push our repo up to github? 
+    A: git push -u origin {branch-name}
     37. Walk me through Lambda's git flow. 
+    A: the intention of Lambda's git flow is:
+    1. to allow to create the student's own repo or to fork a project.
+    2. the studend will add a TL as collaborator.
+    3. the student then will clone the repo.
+    4. after that a branch will be created by the following command: git checkout -b 'firstName-lastName'
+    5. Tl then will count the assignment as  done by merging it back into master "Student Fork"
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
+    A: block-level elements: elements that takes a chunk of the website just like a brick that it's part of a wall.
+        inline-level elements: are composed of elements that are within a block-level element just like a mortar hold together a brick wall. 
+    2. What happens when an element is positioned absolutely?
+    A:  an element with position: absolute will inherit the position relative to it nearest parent element, instead of having a fixed position. In the case the parent element does not have a fixed position it will use the body of the page. 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    A: by adjusting the padding on the element.
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    A: 3 elements that are diplay block: div, p, section 
+    2 elements that are display inline: span, strong
+    1 element that is display: nav tag
     5. In your own words, explain the box model. What is the fix for the box model? 
+    A: its an invisible box that sorround elements that are fixed in a specific position. 
