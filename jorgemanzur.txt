@@ -48,7 +48,7 @@ https://codepen.io/jorge-manzur/pen/jOPYoJa?editors=1100
     A: you write a period at the beginning of the element just like:  '.content-flex'
     21. How do we select a p element with a single class of “human””?
     A: by typing the following: 
-     p .human {
+    .human p {
 
     }
     22. What is a parent child selector? When would this be useful? 
@@ -69,8 +69,8 @@ https://codepen.io/jorge-manzur/pen/jOPYoJa?editors=1100
     28. How do I add a 1px border around my div that is dotted and black?
     A: you select the dive element followed by the border property and you can simplify the value by adding it in a single line:
 
-        .this-div {
-            border: dotted 1px black
+        .mydiv {
+            border: dotted 1px black;
         }
     29. How do I select everything on the page? 
     A: by using the * selector: 
